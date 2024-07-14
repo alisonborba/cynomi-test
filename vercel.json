@@ -7,7 +7,10 @@
     ],
     "functions": {
       "api/**/*.js": {
-        "includeFiles": "prisma/**"
+        "includeFiles": [
+          "prisma/**",
+          "node_modules/.prisma/client/**"
+        ]
       }
     }
   }
