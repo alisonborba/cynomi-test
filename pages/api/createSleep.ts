@@ -24,9 +24,9 @@ export default async function createSleep(
       }
     } catch (error) {
       console.error(error);
-      return res.status(500).json({ error: 'Erro ao criar usuário' });
+      return res.status(500).json({ error: 'Error creating sleep entry' });
     }
   } else {
-    return res.status(405).json({ error: 'Método não permitido' });
+    return res.status(405).json({ error: 'Method not allowed' });
   }
 }
