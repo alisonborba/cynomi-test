@@ -59,7 +59,7 @@ The application should now be running on `http://localhost:3000`.
 
 The application can be deployed to Vercel. The current live version is available at:
 
-[Vercel Deployment URL](https://cynomi-sleep-tracker.vercel.app)
+[Vercel Deployment URL](https://cynomi.vercel.app/)
 
 ## Possible Improvements
 
