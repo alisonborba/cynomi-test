@@ -93,7 +93,7 @@ The application can be deployed to Vercel. The current live version is available
 
 For a quick demo of the application, you can watch the following video:
 
-[Demo Video](https://www.shutterstock.com/shutterstock/videos/1111470671/preview/stock-footage-electric-light-bulb-bright-polygonal-connections-on-a-dark-blue-background-technology-concept.webm)
+[Demo Video](https://www.loom.com/share/eda69c8624ee4378aaa3725528ffcdc2?sid=b557e219-23ea-4ca1-825c-e25da69d954e)
 
 ---
 
