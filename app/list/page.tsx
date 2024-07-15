@@ -24,7 +24,7 @@ export default function UsersPage() {
 
   return (
     <div>
-      <h1>Users</h1>
+      <h1 className="text-center mb-4">Users List and Sleep Entries</h1>
       <Table>
         <TableHeader>
           <TableRow>
