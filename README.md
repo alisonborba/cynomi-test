@@ -97,4 +97,4 @@ For a quick demo of the application, you can watch the following video:
 
 ---
 
-Feel free to reach me out if have any question.
+Feel free to reach out if have any questions.

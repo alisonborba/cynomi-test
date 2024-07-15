@@ -7,7 +7,6 @@ export default async function handler(
 ) {
   if (req.method === 'POST') {
     const { name, gender } = req.body;
-    console.log('name', name, gender);
 
     if (!name) {
       return res.status(400).json({ error: 'Name is requierd' });

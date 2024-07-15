@@ -8,8 +8,6 @@ export default async function createSleep(
   if (req.method === 'POST') {
     const { userId, duration, date } = req.body;
 
-    console.log('userId, duration, date', userId, duration, date);
-
     try {
       const sleep = await prisma.sleep.create({
         data: {
