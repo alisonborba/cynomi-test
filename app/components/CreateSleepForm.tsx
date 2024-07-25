@@ -30,9 +30,14 @@ const formSchema = z.object({
   }),
   duration: z.preprocess(
     (v) => (v === '' ? undefined : Number(v)),
-    z.number().min(1, {
+    z
+      .number()
+      .min(1, {
       message: 'Duration must be at least 1 hour.',
     })
+      .max(24, {
+        message: 'Duration must be up to 24 hours.',
+      })
   ),
   date: z.string().min(1, {
     message: 'Date is required.',
