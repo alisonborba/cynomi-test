@@ -3,6 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import {
   Form,
@@ -33,8 +34,8 @@ const formSchema = z.object({
     z
       .number()
       .min(1, {
-      message: 'Duration must be at least 1 hour.',
-    })
+        message: 'Duration must be at least 1 hour.',
+      })
       .max(24, {
         message: 'Duration must be up to 24 hours.',
       })
@@ -47,6 +48,12 @@ const formSchema = z.object({
 export function CreateSleepForm() {
   const queryClient = useQueryClient();
   const router = useRouter();
+  const [currentDate, setCurrentDate] = useState('');
+
+  useEffect(() => {
+    const today = new Date().toISOString().split('T')[0];
+    setCurrentDate(today);
+  }, []);
 
   const { data: users } = useQuery({
     queryKey: ['getUsers'],
@@ -142,7 +149,7 @@ export function CreateSleepForm() {
                 <Input
                   type="date"
                   placeholder="Select date"
-                  max={new Date().toISOString().split('T')[0]}
+                  max={currentDate}
                   {...field}
                 />
               </FormControl>
